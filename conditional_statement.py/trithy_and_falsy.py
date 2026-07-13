@@ -1,6 +1,6 @@
-"""=================================================
-ASS _1  using Truthy & Falsy – Employee Database 
-=================================================
+#=================================================
+#ASS _1  using Truthy & Falsy – Employee Database 
+#=================================================
 
 empolyee = { 
      "name" : "arshil", 
@@ -8,9 +8,9 @@ empolyee = {
 }
 bool(empolyee)
 
-========================================
-ASS_2 Trafic signal using match case 
-=======================================
+#========================================
+#ASS_2 Trafic signal using match case 
+#=======================================
 
 color = input ("siganl color:-")
 match color:
@@ -23,9 +23,9 @@ match color:
     case _:
         print ("invalid signal")   
 
-==================================        
-ASS_3 calcuator using match case 
-================================== 
+#==================================        
+#ASS_3 calcuator using match case 
+#================================== 
 
 print("1. Additon ")
 print ("2. Subtraction")
@@ -51,9 +51,9 @@ match choise :
 
 
 
-===============================
-ASS_4 ATM MENU USING 
-===============================
+#===============================
+#ASS_4 ATM MENU USING 
+#===============================
 
 print("1.menu")
 print("2.deposit")
@@ -74,9 +74,9 @@ match choise :
         print("invalid choise")
 
 
-==================================
- food ordering system 
-==================================
+#==================================
+#food ordering system 
+#==================================
 
 print("1. menu")
 print("2. pasta")
@@ -96,9 +96,9 @@ match choise:
     case _:
         print("invalid menu")
 
-===================================
-student grade syteam 
-===================================
+#===================================
+#student grade syteam 
+#===================================
 
 grade = (input("Enter your grade"))
 match grade:
@@ -117,9 +117,9 @@ match grade:
 
 
 
-================================
-banking deposit system
-================================
+#================================
+#banking deposit system
+#================================
 
 active = input ("account_active (True/False):" ) == "True"
 kyc = input ("kyc completed (True/False):") == True
@@ -138,9 +138,9 @@ else:
     print ("deposit successful")
 
 
-====================================
-secure login system 
-====================================
+#====================================
+#secure login system 
+#====================================
 
 username = input("Enter your username")
 password = input ("Enter your password")
@@ -154,9 +154,9 @@ elif not otp:
 else:
     print("login sucssecfully")
 
-================================================
- online course caertificate eligibility system 
- ===============================================
+#==============================================
+#online course caertificate eligibility system 
+#===============================================
 
 course = input ("course completed (True/False)") == "True"
 project = input ("final project submitted(True/False)")
@@ -167,9 +167,9 @@ else:
     print("certificate not issued")
 
 
-=============================================
-airline bordiing system 
-============================================
+#=============================================
+#airline bordiing system 
+#============================================
 ticket = input ("ticket confirmed(True/False)")== "True"
 passport = input ("passport valid(True/False)")== "True"
 security = input ("security check completed (True/False)")=="True"
@@ -179,9 +179,8 @@ else:
     print("deny bording ")
 
 
-=================================================
-mini banking application 
-================================================="""
+#mini banking application 
+#=================================================
 balence = 10000
 
 print ("MENU")

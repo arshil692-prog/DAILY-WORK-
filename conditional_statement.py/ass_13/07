@@ -231,6 +231,254 @@ print(index)
 
 # section E case conversion
 
-
+#1///
 text = "hello sir i am rohit "
 print (text.upper())
+
+# Lowercase
+text = "ARSHIL"
+print(text.lower())
+
+# Title Case
+txt = ("hello")
+print(txt.title())
+
+# Capitalize
+txt = ("shaikh")
+print(txt.capitalize())
+
+
+
+
+print("\n")
+print("=" * 60)
+print("SECTION F - WHITESPACE HANDLING")
+print("=" * 60)
+
+text = "      Python Programming      "
+
+print("\nOriginal String :", repr(text))
+
+# Leading spaces
+print("\n1. Remove Leading Spaces")
+print(repr(text.lstrip()))
+
+# Trailing spaces
+print("\n2. Remove Trailing Spaces")
+print(repr(text.rstrip()))
+
+# Both sides
+print("\n3. Remove Both Side Spaces")
+clean = text.strip()
+print(repr(clean))
+
+# Compare Length
+
+print("\n4. Compare Length")
+
+print("Original Length :", len(text))
+print("Clean Length :", len(clean))
+
+
+
+
+print("\n")
+print("=" * 60)
+print("SECTION G - SPLIT JOIN REPLACE")
+print("=" * 60)
+
+languages = "Python,Java,C++,Go"
+
+# Split
+
+print("\n1. Split")
+language_list = languages.split(",")
+print(language_list)
+
+# Join
+
+print("\n2. Join")
+print(" | ".join(language_list))
+
+# Replace
+
+print("\n3. Replace Java with Rust")
+
+text = "Python Java C++ Go"
+
+print(text.replace("Java","Rust"))
+
+# Replace first occurrence
+
+print("\n4. Replace First Occurrence")
+
+text = "Python Python Python"
+
+print(text.replace("Python","Java",1))
+
+
+
+
+print("\n")
+print("=" * 60)
+print("SECTION H - VALIDATION METHODS")
+print("=" * 60)
+
+strings = [
+
+    "Python",
+    "12345",
+    "Python123",
+    " ",
+    "HELLO",
+    "hello",
+    "Future Bright",
+    "student_name"
+
+]
+
+for value in strings:
+
+    print("\n--------------------------------")
+    print("String :", repr(value))
+
+    print("isalpha()      :", value.isalpha())
+    print("isdigit()      :", value.isdigit())
+    print("isalnum()      :", value.isalnum())
+    print("islower()      :", value.islower())
+    print("isupper()      :", value.isupper())
+    print("isspace()      :", value.isspace())
+    print("istitle()      :", value.istitle())
+    print("isidentifier() :", value.isidentifier())
+    print("isascii()      :", value.isascii())
+
+
+
+
+
+print("\n")
+print("=" * 60)
+print("SECTION I - STRING FORMATTING")
+print("=" * 60)
+
+name = "Arshil"
+age = 21
+city = "Nashik"
+
+# Concatenation
+
+print("\n1. Concatenation")
+
+print("Name : " + name)
+print("Age : " + str(age))
+print("City : " + city)
+
+# % Formatting
+
+print("\n2. Percentage Formatting")
+
+print("Name : %s" % name)
+print("Age : %d" % age)
+print("City : %s" % city)
+
+# format()
+
+print("\n3. format()")
+
+print("Name : {}".format(name))
+print("Age : {}".format(age))
+print("City : {}".format(city))
+
+# f-string
+
+print("\n4. f-Strings")
+
+print(f"Name : {name}")
+print(f"Age : {age}")
+print(f"City : {city}")
+
+# Sum
+
+print("\n5. Sum using f-string")
+
+a = 50
+b = 25
+
+print(f"Sum = {a+b}")
+
+# Shopping Bill
+
+print("\n6. Shopping Bill")
+
+item = "Laptop"
+price = 55000
+quantity = 2
+
+total = price * quantity
+
+print("-----------------------------")
+print(f"Item      : {item}")
+print(f"Price     : ₹{price}")
+print(f"Quantity  : {quantity}")
+print("-----------------------------")
+print(f"Total Bill: ₹{total}")
+print("-----------------------------")
+
+
+
+
+
+print("\n")
+print("=" * 60)
+print("SECTION J - COMPARISON & MEMBERSHIP")
+print("=" * 60)
+
+# Compare Apple Banana
+
+print("\n1. Apple < Banana")
+
+print("Apple" < "Banana")
+
+# Compare Python python
+
+print("\n2. Python == python")
+
+print("Python" == "python")
+
+# Membership
+
+print("\n3. Bright Exists?")
+
+company = "FutureBright IT Solutions"
+
+print("Bright" in company)
+
+# Not Exists
+
+print("\n4. Java Not Exists?")
+
+language = "Python Programming"
+
+print("Java" not in language)
+
+# Email Validation
+
+print("\n5. Email Validation")
+
+email = "student@gmail.com"
+
+print("@" in email)
+
+# Filename
+
+print("\n6. Filename Check")
+
+filename = "notes.txt"
+
+print(filename.endswith(".txt"))
+
+
+print("\n")
+print("=" * 60)
+print("PROGRAM COMPLETED SUCCESSFULLY")
+print("=" * 60)

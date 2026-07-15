@@ -1,0 +1,12 @@
+signal = "yellow"
+
+match signal:
+    case "red":
+        print("stop")
+    case "yellow":
+        print ("wait")
+    case "green"
+        print("go")
+    case:
+        print("invalid signal")
+        

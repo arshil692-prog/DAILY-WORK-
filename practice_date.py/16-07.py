@@ -83,3 +83,31 @@ marks = [89,76]
 student1.extend(marks)
 print(student1)
 
+# section D 
+
+name = ["arshil","rohit","viki","darshan"]
+name[::-2] = ["sohel","vikas"]
+print(name)
+
+shopping_list = ["fruits","tech product","grosary","sea food"]
+shopping_list [0]= "milk"
+print(shopping_list)
+
+#append we use for add the item in list 
+name4 = ["shaikh","pathan"]
+name4.append("shah")
+print(name4)
+
+#extend we use for merge to list in one or add elements to anoter colleation
+name5 = [1,2,3]
+name6 = [9,8,7]
+name5.extend(name6)
+print(name5)
+
+#that is diffrence is append is use for add one item in list
+# and extend is merge two list in one 
+
+empolyee1 = ["gita","soham","roshan"]
+empolyee2 = ["vina","nadim","sarthak"]
+empolyee1.extend(empolyee2)
+print(empolyee1)

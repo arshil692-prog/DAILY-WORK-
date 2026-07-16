@@ -1,0 +1,15 @@
+#MINI PROJECT
+choise = int(input("Enter your choise"))
+if choise==1:
+    print("add student")
+    
+elif choise==2:
+    print("add student")
+elif choise==3:
+    print ("insert student")
+elif choise==4:
+    print("update student")
+elif choise==5:
+    print("display")
+else:
+    print("exist")

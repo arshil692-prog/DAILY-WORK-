@@ -64,3 +64,22 @@ print(id(l1))
 print(id(l2))
 
 
+# section c 
+l3 = [1,2,3,4,5]
+l3[2] = 4
+print(l3)
+
+city = ["ugaon","niphad","nashik","maharastra","india"]
+city.append("asia")
+print(city)
+
+
+student = ["rohan","roit","anam"]
+student.insert(0,"arshil")
+print(student)
+
+student1 = ["arshil","rohan"]
+marks = [89,76]
+student1.extend(marks)
+print(student1)
+

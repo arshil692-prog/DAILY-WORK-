@@ -112,3 +112,107 @@ empolyee2 = ["vina","nadim","sarthak"]
 empolyee1.extend(empolyee2)
 print(empolyee1)
 
+"""
+
+choise = int(input("Enter your chiose:"))
+match "choise":
+    case "choise=1":
+        print("add student")
+    case "choise=2":
+        print("insert student")
+    case "choise=3":
+        print("update student")
+    case "choise=4":
+        print("update student")
+    case "choise=5":
+        print("exist")
+    case _:
+        print("invalid choise")
+        """
+
+
+# ==========================================
+# Student Management System
+# ==========================================
+
+students = []
+
+while True:
+
+    print("\n========== Student Management System ==========")
+    print("1. Add Student")
+    print("2. Insert Student")
+    print("3. Update Student")
+    print("4. Display Students")
+    print("5. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    match choice:
+
+        # -------------------------------
+        # Add Student
+        # -------------------------------
+        case 1:
+            name = input("Enter Student Name: ")
+            students.append(name)
+            print("Student Added Successfully.")
+
+        # -------------------------------
+        # Insert Student
+        # -------------------------------
+        case 2:
+            name = input("Enter Student Name: ")
+            index = int(input("Enter Position: "))
+
+            if 0 <= index <= len(students):
+                students.insert(index, name)
+                print("Student Inserted Successfully.")
+            else:
+                print("Invalid Position.")
+
+        # -------------------------------
+        # Update Student
+        # -------------------------------
+        case 3:
+            if len(students) == 0:
+                print("No Students Available.")
+            else:
+                print("\nStudent List")
+                for i in range(len(students)):
+                    print(i, "->", students[i])
+
+                index = int(input("Enter Student Index to Update: "))
+
+                if 0 <= index < len(students):
+                    new_name = input("Enter New Name: ")
+                    students[index] = new_name
+                    print("Student Updated Successfully.")
+                else:
+                    print("Invalid Index.")
+
+        # -------------------------------
+        # Display Students
+        # -------------------------------
+        case 4:
+            if len(students) == 0:
+                print("No Students Found.")
+            else:
+                print("\n------ Student List ------")
+                for i in range(len(students)):
+                    print(i, ":", students[i])
+
+        # -------------------------------
+        # Exit
+        # -------------------------------
+        case 5:
+            print("Thank You!")
+            break
+
+        # -------------------------------
+        # Invalid Choice
+        # -------------------------------
+        case _:
+            print("Invalid Choice. Please Try Again.")
+
+            

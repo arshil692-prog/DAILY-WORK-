@@ -1,3 +1,5 @@
+
+# basic 
 # 1///
 fruits = {"apple","mango","banana","orange"}
 print(fruits)
@@ -22,6 +24,8 @@ print("set",set_num)
 # print(fruits[1])
 #TypeError: 'set' object is not subscriptable
 
+
+# intermediate
 # 6///
 student = {"arshil","rehan","fazal","vahid","aliyan"}
 print("student set;",student)
@@ -39,6 +43,8 @@ else:
 #print(num3)
 #TypeError: unhashable type: 'list'
 
+
+# mini challenge
 #9///
 registrations = [
     "Rahul",
@@ -66,7 +72,7 @@ print("\nOriginal Student Count:", len(registrations))
 print("Unique Student Count:", len(unique_students))
 
 
-
+# set questions (10)
 # level 1 
 # 1///
 student_ids = [101,102,103,102,104,101,105,106,105]
@@ -129,4 +135,35 @@ for word in words:
 required = {"Python","SQL"}
 
 candidate = {"Python","SQL","Pandas","NumPy"}
-Check whether the candidate satisfies all required skills.
+if required.issubset(candidate):
+    print("candidate  satisfy required with all skills:")
+else:
+    print("Candidate does not satisfy all required skills:")
+
+
+# 8///
+store1 = {"rohan","arshil","rehan","fazal"}
+store2 = {"arshil","rehan","fazal","ali"}
+store3 = {"fazal","arshil","rehan","rohan"}
+commen = store1.intersection(store2,store3)
+print("commen visitor is:",commen)
+
+# 9///
+user_A = {"avengers","godfather","king","doomslayes"}
+user_B = {"tiger3","sikender","king"}
+recommend_movie = user_A.difference(user_B)
+print("recommend movies:",recommend_movie)
+
+# 10///
+numbers = [1,2,3,4,2,1,5,3,6,7,8,9,10]
+
+unique = []
+for num in numbers:
+    if num not in unique:
+        unique.append(num)
+print("original list",numbers)
+print("list without duplicates",unique)
+
+# dictionary questions (15)
+# level 1
+# 1///

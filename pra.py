@@ -524,3 +524,61 @@ for num in numbers:
 print("Second Largest:", second)
 
 # 7///
+from array import array
+
+array1 = array('i', [10, 20, 30])
+
+array2 = array('i', [40, 50, 60])
+
+merged = array('i')
+
+merged.extend(array1)
+merged.extend(array2)
+
+print("Merged Array:", merged)
+
+# 8///
+from array import array
+
+months = [
+    "Jan","Feb","Mar","Apr",
+    "May","Jun","Jul","Aug",
+    "Sep","Oct","Nov","Dec"
+]
+
+sales = array('i', [
+    12000,
+    15000,
+    18000,
+    20000,
+    25000,
+    30000,
+    28000,
+    27000,
+    32000,
+    29000,
+    31000,
+    35000
+])
+
+highest = max(sales)
+
+lowest = min(sales)
+
+average = sum(sales) / len(sales)
+
+total = sum(sales)
+
+index = sales.index(highest)
+
+print("Highest Sale:", highest)
+
+print("Lowest Sale:", lowest)
+
+print("Average Sale:", average)
+
+print("Month with Highest Sale:", months[index])
+
+print("Total Annual Sales:", total)
+
+# no 9,8

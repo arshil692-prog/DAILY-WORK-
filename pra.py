@@ -114,3 +114,19 @@ print("\ntotal unique student selcted :")
 print(len(total_selected))
 
 #6///
+
+sentence = "python is easy and python is powerful"
+
+banned = {"is","and"}
+
+words = sentence.split()
+
+for word in words:
+    if word not in  banned:
+        print(word, end = " ")
+        
+# 7///
+required = {"Python","SQL"}
+
+candidate = {"Python","SQL","Pandas","NumPy"}
+Check whether the candidate satisfies all required skills.

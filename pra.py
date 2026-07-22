@@ -436,3 +436,91 @@ for name, salary in employees.items():
 
         print(name, ":", salary)
 
+# arrray questions (10)
+# 1 ///
+from array import array
+
+numbers = array('i', [10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+
+print("Array:", numbers)
+
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+print("Average:", sum(numbers) / len(numbers))
+
+# 2///
+from array import array
+
+numbers = array('i', [10, 20, 30, 40, 50])
+
+element = int(input("Enter element to search: "))
+
+if element in numbers:
+    print("Index:", numbers.index(element))
+else:
+    print("Element not found")
+
+# 3///
+from array import array
+
+numbers = array('i', [10, 20, 30, 40, 50])
+
+reverse_array = array('i')
+
+for i in range(len(numbers)-1, -1, -1):
+    reverse_array.append(numbers[i])
+
+print("Original Array:", numbers)
+print("Reversed Array:", reverse_array)
+
+# 4///
+from array import array
+
+numbers = array('i', [10, 21, 35, 44, 56, 77])
+
+even = 0
+odd = 0
+
+for num in numbers:
+    if num % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Even Numbers:", even)
+print("Odd Numbers:", odd)
+
+
+# 5///
+from array import array
+
+numbers = array('i', [10, 20, 30, 20, 40, 20])
+
+delete_num = int(input("Enter number to delete: "))
+
+new_array = array('i')
+
+for num in numbers:
+    if num != delete_num:
+        new_array.append(num)
+
+print("Updated Array:", new_array)
+
+# 6///
+from array import array
+
+numbers = array('i', [10, 20, 90, 40, 70])
+
+largest = max(numbers)
+
+second = numbers[0]
+
+for num in numbers:
+
+    if num != largest and num > second:
+        second = num
+
+print("Second Largest:", second)
+
+# 7///

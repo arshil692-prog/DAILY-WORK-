@@ -167,3 +167,272 @@ print("list without duplicates",unique)
 # dictionary questions (15)
 # level 1
 # 1///
+students = {
+    "Rahul":85,
+    "Amit":72,
+    "Sneha":94,
+    "Pooja":67
+}
+print("students scoring above 80:")
+for name,marks in students.items():
+    if marks > 80:
+        print(name,":",marks)
+    
+# 2///
+# 2.1
+students = {
+    "Rahul":85,
+    "Amit":72,
+    "Sneha":94,
+    "Pooja":67
+}
+for name,marks in students.items():
+    if marks > 80:
+        print("higgest marks",name,marks)
+    elif marks > 50:
+        print("average marks",name,marks)
+    elif marks > 30:
+        print("lowest marks",name,marks)    
+    else:
+        print("fail ",name,marks)
+
+# 2.2
+students = {
+    "Rahul": 85,
+    "Amit": 72,
+    "Sneha": 94,
+    "Pooja": 67
+}
+
+marks = students.values()
+
+print("Highest Marks :", max(marks))
+print("Lowest Marks  :", min(marks))
+print("Average Marks :", sum(marks) / len(marks))
+
+# 3///
+word = "programming"
+frequnacy = {}
+for ch in word:
+    if ch in frequnacy:
+        frequnacy [ch] += 1
+    else :
+        frequnacy [ch] = 1
+        print(frequnacy)
+
+# 4///
+sentence = "python is easy python is powerful"
+
+words = sentence.split()
+
+frequency = {}
+
+for word in words:
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+
+print(frequency)
+
+
+#5///
+data = {
+    "A": 1,
+    "B": 2,
+    "C": 3
+}
+
+reverse = {}
+
+for key, value in data.items():
+    reverse[value] = key
+
+print(reverse)
+
+# 7///
+phonebook = {}
+
+while True:
+
+    print("\n1 Add Contact")
+    print("2 Delete Contact")
+    print("3 Search Contact")
+    print("4 Update Contact")
+    print("5 Display")
+    print("6 Exit")
+
+    choice = int(input("Enter Choice: "))
+
+    if choice == 1:
+        name = input("Enter Name: ")
+        number = input("Enter Number: ")
+
+        phonebook[name] = number
+
+    elif choice == 2:
+        name = input("Enter Name: ")
+
+        if name in phonebook:
+            del phonebook[name]
+
+    elif choice == 3:
+        name = input("Enter Name: ")
+
+        if name in phonebook:
+            print(phonebook[name])
+        else:
+            print("Contact Not Found")
+
+    elif choice == 4:
+        name = input("Enter Name: ")
+
+        if name in phonebook:
+            phonebook[name] = input("Enter New Number: ")
+
+    elif choice == 5:
+        print(phonebook)
+
+    elif choice == 6:
+        break
+
+
+# 8///
+employees = {
+    "Rahul": {"Salary": 70000, "Department": "HR"},
+    "Amit": {"Salary": 55000, "Department": "IT"},
+    "Sneha": {"Salary": 90000, "Department": "Finance"},
+    "Pooja": {"Salary": 45000, "Department": "Admin"}
+}
+
+print("Employees earning above ₹60,000\n")
+
+for name, details in employees.items():
+
+    if details["Salary"] > 60000:
+
+        print(name)
+
+        print("Salary:", details["Salary"])
+
+        print("Department:", details["Department"])
+
+        print()
+
+
+# 9///
+dict1 = {
+    "A": 1,
+    "B": 2
+}
+
+dict2 = {
+    "C": 3,
+    "D": 4
+}
+
+dict1.update(dict2)
+
+print(dict1)
+
+# 10 ///
+students = {
+    "Rahul": "Python",
+    "Amit": "Python",
+    "Sneha": "Java",
+    "Pooja": "Java"
+}
+
+group = {}
+
+for name, course in students.items():
+
+    if course not in group:
+        group[course] = []
+
+    group[course].append(name)
+
+print(group)
+
+# 11 ///
+votes = {}
+
+while True:
+
+    candidate = input("Vote (type Exit to stop): ")
+
+    if candidate.lower() == "exit":
+        break
+
+    if candidate in votes:
+        votes[candidate] += 1
+    else:
+        votes[candidate] = 1
+
+print("\nResult")
+
+for name, count in votes.items():
+    print(name, ":", count)
+
+
+
+# 12///
+library = {
+    "Python": 5,
+    "Java": 4,
+    "SQL": 3
+}
+
+while True:
+
+    print("\n1 Issue")
+    print("2 Return")
+    print("3 Display")
+    print("4 Exit")
+
+    ch = int(input("Choice: "))
+
+    if ch == 1:
+
+        book = input("Book Name: ")
+
+        if book in library and library[book] > 0:
+            library[book] -= 1
+
+    elif ch == 2:
+
+        book = input("Book Name: ")
+
+        if book in library:
+            library[book] += 1
+
+    elif ch == 3:
+
+        print(library)
+
+    elif ch == 4:
+        break
+
+# 15 ///
+employees = {
+    "Rahul": 70000,
+    "Amit": 55000,
+    "Sneha": 90000,
+    "Pooja": 45000,
+    "Rohan": 80000
+}
+
+salaries = list(employees.values())
+
+salaries.sort(reverse=True)
+
+second = salaries[1]
+
+for name, salary in employees.items():
+
+    if salary == second:
+
+        print("Second Highest Salary")
+
+        print(name, ":", salary)
+

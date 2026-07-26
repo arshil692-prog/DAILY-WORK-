@@ -9,3 +9,4 @@ arshil,shaikh = shaikh,arshil
 print(arshil,shaikh)
 
 #hello
+# that the so many rules 

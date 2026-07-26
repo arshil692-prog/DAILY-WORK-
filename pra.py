@@ -582,3 +582,4 @@ print("Month with Highest Sale:", months[index])
 print("Total Annual Sales:", total)
 
 # no 9,8
+

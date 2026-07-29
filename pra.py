@@ -583,3 +583,15 @@ print("Total Annual Sales:", total)
 
 # no 9,8
 
+
+
+input("eniter your signal")
+match signal:
+
+    case1 = "green":
+        print(go):
+    case2 = "yello"
+        print(wait):
+    case _:
+        print(invalid)
+
